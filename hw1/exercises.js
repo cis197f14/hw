@@ -25,24 +25,27 @@
 
   var arrayMethods = {
     /*
-    * Sum all the elements in the array and return the total. Throw an error if
-    * an element isn't a Number.
-    */
+     * Sum all the elements in the array and return the total. Throw an error if
+     * an element isn't a Number.
+     */
     sum: function (arr) {
 
     },
 
     /*
-    * Remove a given element and return the new / modified array.
-    */
+     * Remove a given element and return the new modified array.
+     */
     remove: function (arr, item) {
 
     },
 
     /*
-    * Find duplicates in an array (test for equality using `===`). Return an
-    * array containing them all.
-    */
+     * Find duplicates in an array (test for equality using `===`). Return an
+     * array containing them all.
+     *
+     * For example, if arr is [1, 1, 'a', 'b', 'c', 'a'], then findDuplicates
+     * should return [1, 'a']
+     */
     findDuplicates: function (arr) {
 
     }
