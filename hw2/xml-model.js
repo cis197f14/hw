@@ -22,7 +22,12 @@
 
   var XMLElement;
 
-  
+  // -------------------------------------------------------------------------
+  // XMLText
+  //
+  // Represents some text in the document tree.
+  // -------------------------------------------------------------------------
+  var XMLText;
 
   // -------------------------------------------------------------------------
   // XMLDocument <: XMLElement
@@ -43,8 +48,6 @@
   // -------------------------------------------------------------------------
 
   var XMLDocumentBuilder = function (xmlString, callback) {
-    xmlString && xmlString.toString().trim();
-
     if (xmlString == null) {
       throw new Error("No XML to parse.");
     }
@@ -116,8 +119,9 @@
   // -------------------------------------------------------------------------
 
   module.exports = {
-    XMLElement: XMLElement
-  , XMLDocument: XMLDocument
+    XMLElement: XMLElement,
+    XMLDocument: XMLDocument,
+    XMLDocumentBuilder: XMLDocumentBuilder
   };
 
 })();
