@@ -69,3 +69,9 @@ Expected output: ["TRY", "TREE", "TREK"]
 /*
 Expected output: ["TREK"]
 */
+
+// console.log(trie.getSuggestions(''));
+
+/*
+Expected output: []
+*/
