@@ -2,9 +2,9 @@
 
 /**
  * Given a URL and a base URL, performs the following steps:
- * 1. GETs a list of JSON file names from the URL
+ * 1. GETs an array of JSON file names from the URL
  * 2. Adds each of these filenames to the base URL to obtain a list of URLs
- * 3. GETs each of these filenames (the data will be a string list)
+ * 3. GETs each of these filenames (the data will be an array of strings)
  * 4. Returns an array that contains the combined output of each of the
  *     JSON files as a string list.
  * @param {string} url The original URL to GET
@@ -24,8 +24,6 @@ var trieFromDataPromise = function (dataPromise) {
   // TODO
 }
 
-window.trieFromDataPromise = trieFromDataPromise;
-
 // var classData = multiGet('http://cis197.herokuapp.com/departmentURLs.json',
 //                          'http://cis197.herokuapp.com/');
 
@@ -34,3 +32,5 @@ window.trieFromDataPromise = trieFromDataPromise;
 // });
 
 // Expected output: ["ESE 301", "ESE 302"]
+
+window.trieFromDataPromise = trieFromDataPromise;
